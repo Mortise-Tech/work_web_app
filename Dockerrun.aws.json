@@ -1,0 +1,15 @@
+
+  {
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "jarodriguez045/work_app",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": 5000,
+      "HostPort": 5001
+    }
+  ],
+  "Logging": "/var/log/nginx"
+}

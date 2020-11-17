@@ -27,3 +27,6 @@ def index():
         db.session.add(Todo(todo_text=request.form['todo']))
         db.session.commit()
     return render_template('index.html', todos=Todo.query.all(), template_form=TodoForm())
+
+if __name__ == '__main__':
+    app.run(debug=True,host='0.0.0.0')
